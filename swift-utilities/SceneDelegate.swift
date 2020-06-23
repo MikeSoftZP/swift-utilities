@@ -3,7 +3,7 @@
 //  swift-utilities
 //
 //  Created by Mike Ponomaryov on 23.06.2020.
-//  Copyright © 2020 Mike Ponomaryov. All rights reserved.
+//  Copyright © 2020 illutex. All rights reserved.
 //
 
 import UIKit

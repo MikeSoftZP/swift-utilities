@@ -13,6 +13,11 @@
 		279E2A0224A275A6006D9AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279E2A0024A275A6006D9AB5 /* Main.storyboard */; };
 		279E2A0424A275A9006D9AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279E2A0324A275A9006D9AB5 /* Assets.xcassets */; };
 		279E2A0724A275A9006D9AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279E2A0524A275A9006D9AB5 /* LaunchScreen.storyboard */; };
+		279E2A1324A27AF8006D9AB5 /* UIView+Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2A1024A27AF8006D9AB5 /* UIView+Inspectable.swift */; };
+		279E2A1424A27AF8006D9AB5 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2A1124A27AF8006D9AB5 /* UIColor+Hex.swift */; };
+		279E2A1524A27AF8006D9AB5 /* Codable+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2A1224A27AF8006D9AB5 /* Codable+Helper.swift */; };
+		279E2A1824A27B01006D9AB5 /* CameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2A1624A27B01006D9AB5 /* CameraButton.swift */; };
+		279E2A1924A27B01006D9AB5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2A1724A27B01006D9AB5 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		279E2A0324A275A9006D9AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		279E2A0624A275A9006D9AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		279E2A0824A275A9006D9AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		279E2A1024A27AF8006D9AB5 /* UIView+Inspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Inspectable.swift"; sourceTree = "<group>"; };
+		279E2A1124A27AF8006D9AB5 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		279E2A1224A27AF8006D9AB5 /* Codable+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+Helper.swift"; sourceTree = "<group>"; };
+		279E2A1624A27B01006D9AB5 /* CameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraButton.swift; sourceTree = "<group>"; };
+		279E2A1724A27B01006D9AB5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 		279E29F924A275A6006D9AB5 /* swift-utilities */ = {
 			isa = PBXGroup;
 			children = (
+				279E2A0E24A279FC006D9AB5 /* Helpers */,
+				279E2A0F24A279FC006D9AB5 /* Utilities */,
 				279E29FA24A275A6006D9AB5 /* AppDelegate.swift */,
 				279E29FC24A275A6006D9AB5 /* SceneDelegate.swift */,
 				279E29FE24A275A6006D9AB5 /* ViewController.swift */,
@@ -65,6 +77,25 @@
 				279E2A0824A275A9006D9AB5 /* Info.plist */,
 			);
 			path = "swift-utilities";
+			sourceTree = "<group>";
+		};
+		279E2A0E24A279FC006D9AB5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				279E2A1224A27AF8006D9AB5 /* Codable+Helper.swift */,
+				279E2A1124A27AF8006D9AB5 /* UIColor+Hex.swift */,
+				279E2A1024A27AF8006D9AB5 /* UIView+Inspectable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		279E2A0F24A279FC006D9AB5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				279E2A1624A27B01006D9AB5 /* CameraButton.swift */,
+				279E2A1724A27B01006D9AB5 /* GradientView.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +126,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = "Mike Ponomaryov";
+				ORGANIZATIONNAME = illutex;
 				TargetAttributes = {
 					279E29F624A275A6006D9AB5 = {
 						CreatedOnToolsVersion = 11.5;
@@ -138,9 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279E2A1524A27AF8006D9AB5 /* Codable+Helper.swift in Sources */,
 				279E29FF24A275A6006D9AB5 /* ViewController.swift in Sources */,
+				279E2A1324A27AF8006D9AB5 /* UIView+Inspectable.swift in Sources */,
 				279E29FB24A275A6006D9AB5 /* AppDelegate.swift in Sources */,
 				279E29FD24A275A6006D9AB5 /* SceneDelegate.swift in Sources */,
+				279E2A1424A27AF8006D9AB5 /* UIColor+Hex.swift in Sources */,
+				279E2A1924A27B01006D9AB5 /* GradientView.swift in Sources */,
+				279E2A1824A27B01006D9AB5 /* CameraButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
