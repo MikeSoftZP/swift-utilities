@@ -18,6 +18,12 @@
 		279E2A1524A27AF8006D9AB5 /* Codable+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2A1224A27AF8006D9AB5 /* Codable+Helper.swift */; };
 		279E2A1824A27B01006D9AB5 /* CameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2A1624A27B01006D9AB5 /* CameraButton.swift */; };
 		279E2A1924A27B01006D9AB5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2A1724A27B01006D9AB5 /* GradientView.swift */; };
+		27A70EA024A375F300B72F54 /* ExposureAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A70E9F24A375F300B72F54 /* ExposureAreaView.swift */; };
+		27B78D1724A3A776001E9757 /* DegreesRadians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B78D1624A3A776001E9757 /* DegreesRadians.swift */; };
+		27D0BC49261358160027FF8A /* Swift+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0BC48261358160027FF8A /* Swift+Logging.swift */; };
+		27D0BC4C2613588E0027FF8A /* DispatchQueue+Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0BC4B2613588E0027FF8A /* DispatchQueue+Thread.swift */; };
+		27EB24E92511668C00141D89 /* NumericTypesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB24E82511668C00141D89 /* NumericTypesExtension.swift */; };
+		27EB24EB2511672700141D89 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB24EA2511672700141D89 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		279E2A1224A27AF8006D9AB5 /* Codable+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+Helper.swift"; sourceTree = "<group>"; };
 		279E2A1624A27B01006D9AB5 /* CameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraButton.swift; sourceTree = "<group>"; };
 		279E2A1724A27B01006D9AB5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		27A70E9F24A375F300B72F54 /* ExposureAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureAreaView.swift; sourceTree = "<group>"; };
+		27B78D1624A3A776001E9757 /* DegreesRadians.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreesRadians.swift; sourceTree = "<group>"; };
+		27D0BC48261358160027FF8A /* Swift+Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Logging.swift"; sourceTree = "<group>"; };
+		27D0BC4B2613588E0027FF8A /* DispatchQueue+Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Thread.swift"; sourceTree = "<group>"; };
+		27EB24E82511668C00141D89 /* NumericTypesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericTypesExtension.swift; sourceTree = "<group>"; };
+		27EB24EA2511672700141D89 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +94,14 @@
 		279E2A0E24A279FC006D9AB5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				27EB24EA2511672700141D89 /* Global.swift */,
+				27D0BC4B2613588E0027FF8A /* DispatchQueue+Thread.swift */,
 				279E2A1224A27AF8006D9AB5 /* Codable+Helper.swift */,
 				279E2A1124A27AF8006D9AB5 /* UIColor+Hex.swift */,
 				279E2A1024A27AF8006D9AB5 /* UIView+Inspectable.swift */,
+				27D0BC48261358160027FF8A /* Swift+Logging.swift */,
+				27B78D1624A3A776001E9757 /* DegreesRadians.swift */,
+				27EB24E82511668C00141D89 /* NumericTypesExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -94,6 +111,7 @@
 			children = (
 				279E2A1624A27B01006D9AB5 /* CameraButton.swift */,
 				279E2A1724A27B01006D9AB5 /* GradientView.swift */,
+				27A70E9F24A375F300B72F54 /* ExposureAreaView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -169,11 +187,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B78D1724A3A776001E9757 /* DegreesRadians.swift in Sources */,
+				27D0BC4C2613588E0027FF8A /* DispatchQueue+Thread.swift in Sources */,
 				279E2A1524A27AF8006D9AB5 /* Codable+Helper.swift in Sources */,
+				27A70EA024A375F300B72F54 /* ExposureAreaView.swift in Sources */,
 				279E29FF24A275A6006D9AB5 /* ViewController.swift in Sources */,
 				279E2A1324A27AF8006D9AB5 /* UIView+Inspectable.swift in Sources */,
+				27D0BC49261358160027FF8A /* Swift+Logging.swift in Sources */,
+				27EB24E92511668C00141D89 /* NumericTypesExtension.swift in Sources */,
 				279E29FB24A275A6006D9AB5 /* AppDelegate.swift in Sources */,
 				279E29FD24A275A6006D9AB5 /* SceneDelegate.swift in Sources */,
+				27EB24EB2511672700141D89 /* Global.swift in Sources */,
 				279E2A1424A27AF8006D9AB5 /* UIColor+Hex.swift in Sources */,
 				279E2A1924A27B01006D9AB5 /* GradientView.swift in Sources */,
 				279E2A1824A27B01006D9AB5 /* CameraButton.swift in Sources */,

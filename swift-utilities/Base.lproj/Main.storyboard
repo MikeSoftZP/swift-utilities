@@ -16,15 +16,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xx0-2X-Dvg" customClass="CameraButton" customModule="swift_utilities" customModuleProvider="target">
-                                <rect key="frame" x="192" y="776" width="30" height="66"/>
+                                <rect key="frame" x="184" y="776" width="46" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="qDX-QM-Ol2"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="uAe-rd-6FC"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dlT-rz-D5f" customClass="ExposureAreaView" customModule="Rivet" customModuleProvider="target">
+                                <rect key="frame" x="120" y="196" width="36" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.5" alpha="0.2011986301369863" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xx0-2X-Dvg" secondAttribute="bottom" constant="20" id="HzD-e8-a8n"/>
                             <constraint firstItem="xx0-2X-Dvg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z6c-1a-OMH"/>
@@ -34,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="110"/>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
         </scene>
     </scenes>
 </document>
