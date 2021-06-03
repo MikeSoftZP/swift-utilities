@@ -1,9 +1,9 @@
 //
 //  PixelBufferManager.swift
-//  Rivet
+//  swift-utilities
 //
 //  Created by Mike Ponomaryov on 26.05.2021.
-//  Copyright © 2021 Mike Ponomaryov. All rights reserved.
+//  Copyright © 2021 illutex. All rights reserved.
 //
 
 import AVFoundation

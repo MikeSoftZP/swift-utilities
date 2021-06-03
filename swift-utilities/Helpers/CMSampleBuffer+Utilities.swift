@@ -1,9 +1,9 @@
 //
 //  CMSampleBuffer+Utilities.swift
-//  Illutex
+//  swift-utilities
 //
 //  Created by Mike Ponomaryov on 24.02.2021.
-//  Copyright © 2021 Mike Ponomaryov. All rights reserved.
+//  Copyright © 2021 illutex. All rights reserved.
 //
 
 import UIKit
