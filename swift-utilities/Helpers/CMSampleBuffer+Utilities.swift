@@ -1,12 +1,13 @@
 //
 //  CMSampleBuffer+Utilities.swift
-//  Rivet
+//  Illutex
 //
 //  Created by Mike Ponomaryov on 24.02.2021.
 //  Copyright © 2021 Mike Ponomaryov. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import AVFoundation
 
 extension CMSampleBuffer {
     
@@ -141,13 +142,56 @@ extension CMSampleBuffer {
         return sampleBuffer
     }
     
-    func copyWithNewPTS(_ pts: CMTime) -> CMSampleBuffer? {
+    func deepCopy(_ pts: CMTime? = nil) -> CMSampleBuffer? {
+        var dstSampleBuffer: CMSampleBuffer? = nil
+        
+        var srcTimingInfo = CMSampleTimingInfo()
+        srcTimingInfo.presentationTimeStamp = presentationTimeStamp
+        srcTimingInfo.duration = duration
+        srcTimingInfo.decodeTimeStamp = decodeTimeStamp
+        
+        if let srcPixelBuffer = CMSampleBufferGetImageBuffer(self) {
+            guard let dstPixelBuffer = srcPixelBuffer.deepCopy() else { return nil }
+
+            var formatDescription: CMFormatDescription?
+            CMVideoFormatDescriptionCreateForImageBuffer(allocator: kCFAllocatorDefault,
+                                                         imageBuffer: dstPixelBuffer,
+                                                         formatDescriptionOut: &formatDescription)
+            guard let dstFormatDescription = formatDescription else { return nil }
+//            guard let srcFormatDescription = CMSampleBufferGetFormatDescription(self) else { return nil }
+            
+            let status = CMSampleBufferCreateReadyWithImageBuffer(allocator: kCFAllocatorDefault,
+                                                                  imageBuffer: dstPixelBuffer,
+                                                                  formatDescription: dstFormatDescription,
+                                                                  sampleTiming: &srcTimingInfo,
+                                                                  sampleBufferOut: &dstSampleBuffer)
+            guard status == kCVReturnSuccess else { return nil }
+            
+            do {
+                try dstSampleBuffer?.setOutputPresentationTimeStamp(outputPresentationTimeStamp)
+            } catch {
+                print("error while setting output pts: \(error)")
+            }
+            
+            return dstSampleBuffer
+        } else {
+            // TODO: implement deep copy for audio
+            return nil
+        }
+    }
+    
+    func copy(_ pts: CMTime? = nil, _ dts: CMTime? = nil) -> CMSampleBuffer? {
         var sampleBuffer: CMSampleBuffer?
         
         var timingInfo = CMSampleTimingInfo()
         CMSampleBufferGetSampleTimingInfo(self, at: 0, timingInfoOut: &timingInfo)
-        timingInfo.presentationTimeStamp = pts
-        timingInfo.decodeTimeStamp = pts // kCMTimeInvalid if in sequence
+        
+        if let pts = pts {
+            timingInfo.presentationTimeStamp = pts
+        }
+        if let dts = dts {
+            timingInfo.decodeTimeStamp = dts // kCMTimeInvalid if in sequence
+        }
         
         CMSampleBufferCreateCopyWithNewTiming(allocator: kCFAllocatorDefault,
                                               sampleBuffer: self, sampleTimingEntryCount: 1,
@@ -155,7 +199,7 @@ extension CMSampleBuffer {
                                               sampleBufferOut: &sampleBuffer)
         
         do {
-            try sampleBuffer?.setOutputPresentationTimeStamp(pts)
+            try sampleBuffer?.setOutputPresentationTimeStamp(timingInfo.presentationTimeStamp)
         } catch {
             print("error while setting output pts: \(error)")
         }

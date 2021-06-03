@@ -18,8 +18,14 @@
 		279E2A1524A27AF8006D9AB5 /* Codable+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2A1224A27AF8006D9AB5 /* Codable+Helper.swift */; };
 		279E2A1824A27B01006D9AB5 /* CameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2A1624A27B01006D9AB5 /* CameraButton.swift */; };
 		279E2A1924A27B01006D9AB5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2A1724A27B01006D9AB5 /* GradientView.swift */; };
+		27A311F12668E36100FEDC58 /* CMSampleBuffer+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A311EF2668E36100FEDC58 /* CMSampleBuffer+Utilities.swift */; };
+		27A311F22668E36100FEDC58 /* CVPixelBuffer+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A311F02668E36100FEDC58 /* CVPixelBuffer+Utilities.swift */; };
+		27A311F42668E36D00FEDC58 /* PixelBufferManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A311F32668E36D00FEDC58 /* PixelBufferManager.swift */; };
 		27A70EA024A375F300B72F54 /* ExposureAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A70E9F24A375F300B72F54 /* ExposureAreaView.swift */; };
 		27B78D1724A3A776001E9757 /* DegreesRadians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B78D1624A3A776001E9757 /* DegreesRadians.swift */; };
+		27CD75CD261CB857006DBB2A /* NUOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD75CA261CB857006DBB2A /* NUOperationQueue.swift */; };
+		27CD75CE261CB857006DBB2A /* MemoryHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD75CB261CB857006DBB2A /* MemoryHolder.swift */; };
+		27CD75CF261CB857006DBB2A /* NUOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD75CC261CB857006DBB2A /* NUOperation.swift */; };
 		27D0BC49261358160027FF8A /* Swift+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0BC48261358160027FF8A /* Swift+Logging.swift */; };
 		27D0BC4C2613588E0027FF8A /* DispatchQueue+Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0BC4B2613588E0027FF8A /* DispatchQueue+Thread.swift */; };
 		27EB24E92511668C00141D89 /* NumericTypesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB24E82511668C00141D89 /* NumericTypesExtension.swift */; };
@@ -40,8 +46,14 @@
 		279E2A1224A27AF8006D9AB5 /* Codable+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+Helper.swift"; sourceTree = "<group>"; };
 		279E2A1624A27B01006D9AB5 /* CameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraButton.swift; sourceTree = "<group>"; };
 		279E2A1724A27B01006D9AB5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		27A311EF2668E36100FEDC58 /* CMSampleBuffer+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+Utilities.swift"; sourceTree = "<group>"; };
+		27A311F02668E36100FEDC58 /* CVPixelBuffer+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Utilities.swift"; sourceTree = "<group>"; };
+		27A311F32668E36D00FEDC58 /* PixelBufferManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PixelBufferManager.swift; path = "swift-utilities/Utilities/PixelBufferManager.swift"; sourceTree = SOURCE_ROOT; };
 		27A70E9F24A375F300B72F54 /* ExposureAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureAreaView.swift; sourceTree = "<group>"; };
 		27B78D1624A3A776001E9757 /* DegreesRadians.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreesRadians.swift; sourceTree = "<group>"; };
+		27CD75CA261CB857006DBB2A /* NUOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NUOperationQueue.swift; sourceTree = "<group>"; };
+		27CD75CB261CB857006DBB2A /* MemoryHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryHolder.swift; sourceTree = "<group>"; };
+		27CD75CC261CB857006DBB2A /* NUOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NUOperation.swift; sourceTree = "<group>"; };
 		27D0BC48261358160027FF8A /* Swift+Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Logging.swift"; sourceTree = "<group>"; };
 		27D0BC4B2613588E0027FF8A /* DispatchQueue+Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Thread.swift"; sourceTree = "<group>"; };
 		27EB24E82511668C00141D89 /* NumericTypesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericTypesExtension.swift; sourceTree = "<group>"; };
@@ -102,6 +114,8 @@
 				27D0BC48261358160027FF8A /* Swift+Logging.swift */,
 				27B78D1624A3A776001E9757 /* DegreesRadians.swift */,
 				27EB24E82511668C00141D89 /* NumericTypesExtension.swift */,
+				27A311EF2668E36100FEDC58 /* CMSampleBuffer+Utilities.swift */,
+				27A311F02668E36100FEDC58 /* CVPixelBuffer+Utilities.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -109,11 +123,23 @@
 		279E2A0F24A279FC006D9AB5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				27CD75C9261CB857006DBB2A /* NetworkUtilities */,
+				27A311F32668E36D00FEDC58 /* PixelBufferManager.swift */,
 				279E2A1624A27B01006D9AB5 /* CameraButton.swift */,
 				279E2A1724A27B01006D9AB5 /* GradientView.swift */,
 				27A70E9F24A375F300B72F54 /* ExposureAreaView.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		27CD75C9261CB857006DBB2A /* NetworkUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				27CD75CA261CB857006DBB2A /* NUOperationQueue.swift */,
+				27CD75CB261CB857006DBB2A /* MemoryHolder.swift */,
+				27CD75CC261CB857006DBB2A /* NUOperation.swift */,
+			);
+			path = NetworkUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +169,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = illutex;
 				TargetAttributes = {
 					279E29F624A275A6006D9AB5 = {
@@ -191,8 +217,11 @@
 				27D0BC4C2613588E0027FF8A /* DispatchQueue+Thread.swift in Sources */,
 				279E2A1524A27AF8006D9AB5 /* Codable+Helper.swift in Sources */,
 				27A70EA024A375F300B72F54 /* ExposureAreaView.swift in Sources */,
+				27CD75CE261CB857006DBB2A /* MemoryHolder.swift in Sources */,
+				27CD75CD261CB857006DBB2A /* NUOperationQueue.swift in Sources */,
 				279E29FF24A275A6006D9AB5 /* ViewController.swift in Sources */,
 				279E2A1324A27AF8006D9AB5 /* UIView+Inspectable.swift in Sources */,
+				27A311F12668E36100FEDC58 /* CMSampleBuffer+Utilities.swift in Sources */,
 				27D0BC49261358160027FF8A /* Swift+Logging.swift in Sources */,
 				27EB24E92511668C00141D89 /* NumericTypesExtension.swift in Sources */,
 				279E29FB24A275A6006D9AB5 /* AppDelegate.swift in Sources */,
@@ -200,7 +229,10 @@
 				27EB24EB2511672700141D89 /* Global.swift in Sources */,
 				279E2A1424A27AF8006D9AB5 /* UIColor+Hex.swift in Sources */,
 				279E2A1924A27B01006D9AB5 /* GradientView.swift in Sources */,
+				27CD75CF261CB857006DBB2A /* NUOperation.swift in Sources */,
 				279E2A1824A27B01006D9AB5 /* CameraButton.swift in Sources */,
+				27A311F42668E36D00FEDC58 /* PixelBufferManager.swift in Sources */,
+				27A311F22668E36100FEDC58 /* CVPixelBuffer+Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +284,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -312,6 +345,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
